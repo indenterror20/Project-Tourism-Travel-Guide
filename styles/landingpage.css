@@ -200,5 +200,5 @@ nav a:hover {
 }
 
 .image-overlay p{
-    font-size: clamp(1rem,3vw,1.2rem);
+    font-size: clamp(1rem,3vw,1.3rem);
 }
