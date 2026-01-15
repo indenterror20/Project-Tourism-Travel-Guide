@@ -171,8 +171,8 @@ nav a:hover {
 }
 
 .about-description img{
-    width: 91vw;
+    margin-left: -1%;
+    width: 92vw;
     height: 91vh;
-    align-content: center;
-    border-radius: 10%;
+    border-radius: 20%;
 }
