@@ -1,11 +1,27 @@
-.main{
-    position: relative;
-    padding: 15px;
-    border-top: 10px;
-    border-bottom: 20px;
-    background-color: gray;
+#toggle {
+  display: none;
 }
 
-nav_bar_button{
-    
+.menu-btn {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
 }
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #111;
+  position: fixed;
+  left: -250px;
+  transition: 0.3s;
+}
+
+#toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
