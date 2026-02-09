@@ -13,15 +13,15 @@ body{
 }
 
 /*sidebar map icon*/
+/*follow the the arrangement in maps and hover for other icons*/
 #Maps{
   display: flex;
   padding-left: 35px;
   padding-top: 70px;
-  font-size:35px;
+  font-size:35px; 
 }
 
 /*sidebar map icon hover*/
 #Maps:hover{
-  
   transform: scale(1.10);
 }
