@@ -1,5 +1,11 @@
 body{
-  background-color: #EEF2FF;
+  background-color: #FCF9EA;
+}
+
+/*name*/
+.name{
+  display: flex;
+  padding-left: 15px;
 }
 
 /*style for the sidebar*/
@@ -9,19 +15,58 @@ body{
   top: 0;
   height: 100vh;
   width: 10vw;
-  background-color: #676FA3;
+  background-color: #FCF9EA;
+}
+
+/*sidbar listing icon*/
+#listings{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 60px;
+  font-size:35px; 
+  text-decoration: none;
+  color: inherit;
+}
+
+#listings a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*sidebar listings icon hover*/
+#listings:hover{
+  transform: scale(1.10);
 }
 
 /*sidebar map icon*/
 /*follow the the arrangement in maps and hover for other icons*/
 #Maps{
   display: flex;
-  padding-left: 35px;
+  padding-left: 10px;
   padding-top: 70px;
   font-size:35px; 
+}
+
+#Maps a{
+  text-decoration: none;
+  color: inherit;
 }
 
 /*sidebar map icon hover*/
 #Maps:hover{
   transform: scale(1.10);
 }
+
+/*sidebar settings icon*/
+#settings{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 200px;
+  font-size:35px;
+}
+
+#settings a{
+  text-decoration: none;
+  color: inherit;
+}
+
