@@ -1,72 +1,36 @@
-body{
-  background-color: #FCF9EA;
+html{
+  scroll-behavior: smooth;
 }
 
-/*name*/
-.name{
+.header{
+  margin: 0;
+  padding: 0;
+  width: 100  vw;
+  height: 10vh;
+  background-color: whitesmoke;
   display: flex;
-  padding-left: 15px;
-}
-
-/*style for the sidebar*/
-.sidebar{
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 10vw;
-  background-color: #FCF9EA;
-}
-
-/*sidbar listing icon*/
-#listings{
-  display: flex;
+  align-items: center;
   padding-left: 10px;
-  padding-top: 60px;
-  font-size:35px; 
-  text-decoration: none;
-  color: inherit;
+  gap: 250px;
 }
 
-#listings a{
-  text-decoration: none;
-  color: inherit;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*sidebar listings icon hover*/
-#listings:hover{
-  transform: scale(1.10);
+#title h2{
+  font-family: sans-serif;
 }
 
-/*sidebar map icon*/
-/*follow the the arrangement in maps and hover for other icons*/
-#Maps{
-  display: flex;
-  padding-left: 10px;
-  padding-top: 70px;
-  font-size:35px; 
+#search input{
+  width: 30vw;
+  height: 7vh;
+  background-color: white;
+  border-radius: 30px;
 }
 
-#Maps a{
-  text-decoration: none;
-  color: inherit;
+#searchBar input{
+  text-align: center;
 }
-
-/*sidebar map icon hover*/
-#Maps:hover{
-  transform: scale(1.10);
-}
-
-/*sidebar settings icon*/
-#settings{
-  display: flex;
-  padding-left: 10px;
-  padding-top: 200px;
-  font-size:25px;
-}
-
-#settings a{
-  text-decoration: none;
-  color: inherit;
-}
-
