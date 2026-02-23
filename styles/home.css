@@ -7,11 +7,11 @@ html{
   padding: 0;
   width: 100  vw;
   height: 10vh;
-  background-color: whitesmoke;
   display: flex;
   align-items: center;
   padding-left: 10px;
   gap: 250px;
+  border: 0.5px solid black;
 }
 
 *{
@@ -33,4 +33,30 @@ html{
 
 #searchBar input{
   text-align: center;
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feed{
+  height: 100vh;
+  width: 55vw;
+  border: 0.5px solid black;
+}
+
+.sidebar{
+  width: 15vw;
+  height: 100vh;
+  border: 0.5px solid black
+}
+
+.topwrapped{
+  width: 30vw;
+  height: 50vh;
+  border: 0.5px solid black;
+  margin-right: 20px;
+  margin-bottom: 250px;
 }
