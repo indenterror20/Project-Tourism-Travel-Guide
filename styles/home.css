@@ -11,7 +11,7 @@ html{
   align-items: center;
   padding-left: 10px;
   gap: 250px;
-  border: 0.5px solid black;
+  border: 0.5px solid black
 }
 
 *{
@@ -44,19 +44,43 @@ html{
 .feed{
   height: 100vh;
   width: 55vw;
-  border: 0.5px solid black;
+  border: 0.5px solid black
+  
 }
 
 .sidebar{
-  width: 15vw;
+  width: 13vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: stretch;
+  padding-left: 20px;
+  padding-top: 30px;
   border: 0.5px solid black
 }
+
+.nav-link{
+  text-decoration: none; /* Removes underline */
+  color: black; 
+  transition: border-color 0.3s ease
+}
+
+.nav-link:hover {
+  border-color: gray;
+}
+
+.profile{
+  width: 9vw;
+  height: 5vh;
+  border: 0.5px solid black;
+}
+
 
 .topwrapped{
   width: 30vw;
   height: 80vh;
-  border: 0.5px solid black;
+  border: 0.5px solid black;  
   margin-right: 20px;
   margin-bottom: 90px;
 }
