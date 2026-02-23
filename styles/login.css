@@ -1,0 +1,157 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* LEFT: IMAGE */
+        .image-side {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.72);
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 90px;
+            left: 48px;
+            color: white;
+        }
+
+        .image-overlay h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            line-height: 1.25;
+            max-width: 300px;
+        }
+
+        .image-overlay p {
+            margin-top: 10px;
+            font-size: 0.82rem;
+            font-weight: 300;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+        }
+
+        /* RIGHT: LOGIN */
+        .login-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 64px 72px;
+            background: #fafaf8;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 64px;
+        }
+
+        .brand img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .brand span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            color: #1a1a1a;
+        }
+
+        .login-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .login-sub {
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .form-group { margin-bottom: 22px; }
+
+        .form-group label {
+            display: block;
+            font-size: 0.72rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus { border-bottom-color: #1a1a1a; }
+        .form-group input::placeholder { color: #ccc; font-weight: 300; }
+
+        .forgot {
+            text-align: right;
+            margin-bottom: 36px;
+        }
+
+        .forgot a {
+            font-size: 0.78rem;
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .forgot a:hover { color: #1a1a1a; }
+
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.82rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-login:hover { background: #333; }
+
+        .register {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #bbb;
+        }
+
+        .register a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }

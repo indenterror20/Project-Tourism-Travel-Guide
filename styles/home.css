@@ -5,7 +5,7 @@ html{
 .header{
   margin: 0;
   padding: 0;
-  width: 100  vw;
+  width: 100vw;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -55,8 +55,8 @@ html{
 
 .topwrapped{
   width: 30vw;
-  height: 50vh;
+  height: 80vh;
   border: 0.5px solid black;
   margin-right: 20px;
-  margin-bottom: 250px;
+  margin-bottom: 90px;
 }
