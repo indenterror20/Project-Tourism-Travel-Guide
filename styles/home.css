@@ -1,11 +1,24 @@
 html{
   scroll-behavior: smooth;
+  overflow: hidden;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
 }
 
 .header{
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -13,12 +26,6 @@ html{
   gap: 250px;
   border: 1px solid black;
   background-color: lightblue;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 #title h2{
@@ -38,13 +45,34 @@ html{
 
 .body{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+  overflow: hidden;
 }
 
 .feed{
-  height: 100vh;
+  height: calc(100vh - 10vh);
   width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.posts{
+  flex-shrink: 0;
+  margin-top: 20px;
+  height: 50vh;
+  width: 50vw;
+  border: 0.5px solid black;
+  border-radius: 10px;
 }
 
 .sidebar{
@@ -66,24 +94,24 @@ html{
   width: 120px;
   align-items: center;
   padding: 10px 10px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: sans-serif;
 }
 
 .nav-link:hover {
-  background-color: darkgray; /* light gray background */
-  border-color: darkgray;
+  background-color: lightgrey;
+  border-color: lightgrey;
 }
 
-
-
 .topwrapped{
+  margin-top: 10px;
   width: 30vw;
   height: 60vh;
-  border: 2px solid lightgreen;  
+  border: 0.2px solid black;  
   border-radius: 10px;
   margin-right: 20px;
   margin-bottom: 200px;
-  background-color: lightgrey;
+  background-color: whitesmoke;
 }
