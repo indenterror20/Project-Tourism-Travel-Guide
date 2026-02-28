@@ -50,31 +50,6 @@ body {
   overflow: hidden;
 }
 
-.feed{
-  height: calc(100vh - 10vh);
-  width: 55vw;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;
-}
-
-.feed::-webkit-scrollbar {
-  display: none;
-}
-
-.posts{
-  flex-shrink: 0;
-  margin-top: 20px;
-  height: 50vh;
-  width: 50vw;
-  border: 0.5px solid black;
-  border-radius: 10px;
-}
-
 .sidebar{
   width: 14vw;
   height: 100vh;
@@ -103,31 +78,4 @@ body {
 .nav-link:hover {
   background-color: lightgrey;
   border-color: lightgrey;
-}
-
-.topwrapped{
-  margin-top: 10px;
-  width: 30vw;
-  height: 70vh;
-  border: 0.2px solid black;  
-  border-radius: 10px;
-  margin-right: 20px;
-  margin-bottom: 200px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;   
-  scrollbar-width: none;
-}
-
-.top{
-  flex-shrink: 0;
-  width: 27vw;
-  height: 20vh;
-  min-height: 20vh;
-  border: 1px solid black;
-  margin-left: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  background-color: white;
 }
