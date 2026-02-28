@@ -25,7 +25,7 @@ body {
   padding-left: 10px;
   gap: 250px;
   border: 1px solid black;
-  background-color: lightblue;
+  background-color: #0EA5A4;
 }
 
 #title h2{
@@ -108,10 +108,26 @@ body {
 .topwrapped{
   margin-top: 10px;
   width: 30vw;
-  height: 60vh;
+  height: 70vh;
   border: 0.2px solid black;  
   border-radius: 10px;
   margin-right: 20px;
   margin-bottom: 200px;
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;   
+  scrollbar-width: none;
+}
+
+.top{
+  flex-shrink: 0;
+  width: 27vw;
+  height: 20vh;
+  min-height: 20vh;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
 }
