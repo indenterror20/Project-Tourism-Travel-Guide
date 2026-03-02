@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  gap: 250px;
+  gap: 744px;
   border: 1px solid black;
   background-color: #0EA5A4;
 }
@@ -79,3 +79,18 @@ body {
   background-color: lightgrey;
   border-color: lightgrey;
 }
+
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.profile button{
+  font-size: 20px;
+}
+
+.notification button{
+  font-size: 20px;
+}
+
