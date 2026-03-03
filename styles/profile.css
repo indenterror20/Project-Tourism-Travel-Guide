@@ -22,14 +22,14 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  gap: 744px;
+  gap: 650px;
   border: 1px solid black;
   background-color: #0EA5A4;
 }
 
 #title h2 {
   font-family: sans-serif;
-  color: white;
+  color: black;
 }
 
 .buttons {
