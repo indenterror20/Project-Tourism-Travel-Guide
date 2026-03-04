@@ -1,9 +1,9 @@
-html {
+html{
   scroll-behavior: smooth;
   width: 100%;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -180,47 +180,13 @@ body {
 
 /* ==================== MAIN CONTENT ==================== */
 .main-content {
-  display: flex;
-  flex-direction: column;
   flex: 1;
-  padding: 24px;
-  gap: 20px;
-  position: relative;
-  overflow-y: auto;
   background: white;
   border-radius: 4px;
   border: 1px solid #ccc;
-}
-
-.cover-photo {
-  width: 100%;
-  height: 40vh;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: #e0e0e0;
-}
-
-#profile-photo {
-  position: absolute;
-  top: calc(40vh - 40px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15vw;
-  height: 25vh;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: white;
-  z-index: 1;
-}
-
-.form-post {
-  margin-top: calc(25vh - 20px);
-  width: 40vw;
-  border: 1px solid black;
-  border-radius: 8px;
-  min-height: 100px;
-  padding: 15px;
-  align-self: center;
+  padding: 24px;
+  overflow-y: auto;
+  min-height: 400px;
 }
 
 /* Mobile Responsive Design */
@@ -231,15 +197,6 @@ body {
 
   .main-content {
     padding: 20px;
-  }
-
-  #profile-photo {
-    width: 18vw;
-    height: 28vh;
-  }
-
-  .form-post {
-    width: 50vw;
   }
 }
 
@@ -298,21 +255,6 @@ body {
   .main-content {
     padding: 16px;
   }
-
-  .cover-photo {
-    height: 30vh;
-  }
-
-  #profile-photo {
-    top: calc(30vh - 30px);
-    width: 25vw;
-    height: 35vh;
-  }
-
-  .form-post {
-    margin-top: 50px;
-    width: 90vw;
-  }
 }
 
 @media (max-width: 480px) {
@@ -350,25 +292,6 @@ body {
   }
 
   .main-content {
-    padding: 12px;
-  }
-
-  .cover-photo {
-    height: 25vh;
-    margin-bottom: 40px;
-  }
-
-  #profile-photo {
-    top: calc(25vh - 25px);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40vw;
-    height: 30vh;
-  }
-
-  .form-post {
-    margin-top: 45px;
-    width: 95vw;
     padding: 12px;
   }
 }

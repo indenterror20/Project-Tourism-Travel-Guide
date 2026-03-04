@@ -3,77 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LakbayLokal - Discover Local Wonders</title>
+    <title>LakbayLokal - Discover the Philippines</title>
     <link rel="stylesheet" href="./styles/landingpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="./images/Map.jpg" class="topbg" alt="Background">
-    
-    <header class="header-container">
-        <div class="glass-pill">
-            <div class="logo">LakbayLokal</div>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-content">
+            <div class="logo-section">
+                <span class="logo-icon">🗺️</span>
+                <h2>LakbayLokal</h2>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about" class="nav-cta">Get Started</a>
+            </nav>
         </div>
-
-        <nav class="glass-pill">
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-        </nav>
     </header>
-    
-    <div id="slogan">
-        <h1>Discover Local Wonders, <br> One City at a Time</h1>
-        <p>Your ultimate local travel companion. Find tourist spots, taste local dishes, <br> and experience culture effortlessly all powered by smart maps.</p>
-        <a href="login.html">
-            <button>Try LakbayLokal</button>
-        </a>
-    </div>
-    
-    <div id="about">
-        <div class="about-description">
-            <div class="aboutimage">
-                <img src="./images/botbg.jpg">
-            </div>
-            <div class="image-overlay">
-                <h2>About</h2> 
-                <p>LakbayLokal is a digital gateway designed to transform how you experience the Philippines. Our mission is simple: to make local travel more accessible, immersive, and deeply rooted in the stories that make each province unique.</p>     
-            </div>
-        </div>
-    </div>
-        
-    
-    <div id="secondP">
-            <h2>The Heart of the Journey</h2>
-            <div class="heart-description">
-                <p>We curate our guides around three essential elements that define the Filipino spirit:</p>
-                <ul>
-                    <li><b>Tourist Spots:</b> We go beyond the famous landmarks. We use local insights to find the "hidden gems" that aren't on every postcard.</li>
-                    <li><b>Food & Flavors:</b> Food is the language of our culture. We map out everything from the best carinderias to acclaimed regional restaurants.</li>
-                    <li><b>Culture & Heritage:</b> Every city has a soul. We highlight the festivals, dialects, and history that give a place its identity.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <div class="bottom-animation">
-  <div class="bot-animation">
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-    <span class="white-text">Map Integration</span>
-    <span class="black-text">Trending Travel Destinations</span>
-  </div>
-</div>
 
-    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Heart of the Philippines</h1>
+            <p>Explore hidden gems, experience authentic culture, and taste the flavors of every corner of the Philippines—all in one place</p>
+            <a href="login.html" class="cta-button">Join LakbayLokal Today</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">🇵🇭</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>What Makes LakbayLokal Special</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3>Discover Places</h3>
+                <p>Uncover hidden tourist destinations, historical landmarks, and scenic spots across the Philippines that locals love</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎭</div>
+                <h3>Learn Culture</h3>
+                <p>Dive deep into the rich traditions, festivals, customs, and heritage of each region and its unique communities</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍜</div>
+                <h3>Taste Local Food</h3>
+                <p>Find authentic local restaurants, traditional recipes, and must-try dishes that define each province's culinary identity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Why Choose LakbayLokal?</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h4>🤝 Community-Driven</h4>
+                    <p>Share your experiences and learn from fellow travelers and locals who know their areas best</p>
+                </div>
+                <div class="about-item">
+                    <h4>📱 Easy to Use</h4>
+                    <p>Simple, intuitive interface to browse, share, and discover content about places, culture, and food</p>
+                </div>
+                <div class="about-item">
+                    <h4>🌍 All-in-One Platform</h4>
+                    <p>From planning your trip to experiencing local culture and cuisine—everything you need is here</p>
+                </div>
+                <div class="about-item">
+                    <h4>📸 Share Your Story</h4>
+                    <p>Post photos, reviews, and recommendations to help others discover what you've found</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <h2>Ready to Explore the Philippines?</h2>
+        <p>Start your journey with LakbayLokal and connect with a community of travelers and culture enthusiasts</p>
+        <a href="login.html" class="cta-button-large">Begin Your Adventure</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 LakbayLokal. Celebrating the Philippines, one story at a time.</p>
+    </footer>
 </body>
 </html>
