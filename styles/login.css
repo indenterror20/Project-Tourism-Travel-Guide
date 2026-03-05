@@ -22,6 +22,7 @@
             height: 100%;
             object-fit: cover;
             filter: brightness(0.72);
+            filter: blur();
         }
 
         .image-overlay {
@@ -52,7 +53,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 64px 72px;
+            padding: 25px 50px;
             background: rgba(255, 255, 255, 0.95);
             max-width: 380px;
             width: 100%;
@@ -134,12 +135,12 @@
             transition: color 0.2s;
         }
 
-        .forgot a:hover { color: #1a1a1a; }
+        .forgot a:hover { color: #0ea5a4; }
 
         .btn-login {
             width: 100%;
             padding: 14px;
-            background: #1a1a1a;
+            background: #0ea5a4;
             color: white;
             border: none;
             font-family: 'DM Sans', sans-serif;
@@ -150,7 +151,7 @@
             transition: background 0.2s;
         }
 
-        .btn-login:hover { background: #333; }
+        .btn-login:hover { background: #097a7a; }
 
         .register {
             text-align: center;
