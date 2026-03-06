@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("../Login image.png") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("../images/Login image.png") center/cover no-repeat;
 }
 
 /* SIGNUP CARD */

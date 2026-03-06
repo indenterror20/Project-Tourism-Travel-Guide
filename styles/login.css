@@ -8,7 +8,7 @@
             align-items: center;
             justify-content: center;
             /* full‑screen background image */
-             background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),  url("../Login image.png") center/cover no-repeat;
+             background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),  url("../images/Login image.png") center/cover no-repeat;
         }
              
         /* LEFT: IMAGE */
