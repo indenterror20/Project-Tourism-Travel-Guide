@@ -15,6 +15,89 @@ body {
   background-repeat: no-repeat;
 }
 
+/* ==================== KEYFRAME ANIMATIONS ==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* ==================== HEADER NAVIGATION ==================== */
 .header-nav {
   position: sticky;
@@ -24,6 +107,7 @@ body {
   border-bottom: 1px solid #ccc;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   padding: 12px 0;
+  animation: fadeInDown 0.6s ease-out;
 }
 
 .nav-content {
@@ -44,6 +128,7 @@ body {
 
 .logo-icon {
   font-size: 28px;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .logo-section h2 {
@@ -74,11 +159,13 @@ body {
   color: white;
   padding: 8px 20px;
   border-radius: 20px;
-  transition: background-color 0.2s;
+  transition: all 0.3s;
 }
 
 .nav-links .nav-cta:hover {
   background: #0d9494;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 164, 0.3);
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -95,6 +182,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero-content {
+  animation: slideInLeft 0.8s ease-out;
+}
+
 .hero-content h1 {
   font-size: 48px;
   font-weight: 700;
@@ -108,6 +199,7 @@ body {
   color: white;
   margin-bottom: 30px;
   line-height: 1.6;
+  animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .cta-button {
@@ -119,13 +211,18 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .cta-button:hover {
   background: #0d9494;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(14, 165, 164, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(14, 165, 164, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
 }
 
 .hero-image {
@@ -135,16 +232,12 @@ body {
   height: 400px;
   background: linear-gradient(135deg, #0ea5a4 0%, #08a8a6 100%);
   border-radius: 12px;
+  animation: slideInRight 0.8s ease-out;
 }
 
 .image-placeholder {
   font-size: 100px;
   animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
 }
 
 /* ==================== FEATURES SECTION ==================== */
@@ -160,6 +253,7 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
   color: #1a1a1b;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .features-grid {
@@ -173,19 +267,38 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 30px;
-  transition: all 0.2s;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   text-align: center;
+  animation: scaleIn 0.6s ease-out backwards;
+}
+
+.feature-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 .feature-card:hover {
   border-color: #0ea5a4;
-  box-shadow: 0 8px 24px rgba(14, 165, 164, 0.15);
-  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(14, 165, 164, 0.2);
+  transform: translateY(-8px);
 }
 
 .feature-icon {
   font-size: 48px;
   margin-bottom: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  animation: bounce 0.6s ease;
 }
 
 .feature-card h3 {
@@ -218,6 +331,7 @@ body {
   margin-bottom: 50px;
   text-align: center;
   color: #1a1a1b;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .about-grid {
@@ -231,6 +345,29 @@ body {
   border-radius: 8px;
   padding: 30px;
   border-left: 4px solid #0ea5a4;
+  animation: fadeInUp 0.8s ease-out backwards;
+  transition: all 0.3s ease;
+}
+
+.about-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.about-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.about-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.about-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14, 165, 164, 0.15);
 }
 
 .about-item h4 {
@@ -255,18 +392,21 @@ body {
   max-width: 1400px;
   margin: 80px auto;
   border-radius: 12px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .cta-final h2 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
 .cta-final p {
   font-size: 18px;
   margin-bottom: 30px;
   opacity: 0.95;
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
 }
 
 .cta-button-large {
@@ -278,12 +418,18 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
 .cta-button-large:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  background: #f0f0f0;
+}
+
+.cta-button-large:active {
+  transform: translateY(-1px);
 }
 
 /* ==================== FOOTER ==================== */
@@ -293,6 +439,7 @@ body {
   text-align: center;
   padding: 30px 16px;
   font-size: 14px;
+  animation: fadeInDown 0.8s ease-out;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
