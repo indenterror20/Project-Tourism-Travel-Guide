@@ -39,10 +39,10 @@ body {
 }
 
 .brand h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    color: #1a1a1a;
-    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 24px;
+    color:  #0ea5a4;
+    font-weight: bold;
 }
 
 .signup-heading {
@@ -55,7 +55,7 @@ body {
 
 .signup-sub {
     font-size: 0.85rem;
-    color: #999;
+    color: #8f8e8e;
     margin-bottom: 25px;
     font-weight: 300;
 }
@@ -65,7 +65,7 @@ body {
 .form-group label {
     display: block;
     font-size: 0.72rem;
-    color: #aaa;
+    color: #8f8e8e;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -75,7 +75,7 @@ body {
     width: 100%;
     padding: 12px 0;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #8f8e8e;
     background: transparent;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
@@ -85,7 +85,7 @@ body {
 }
 
 .form-group input:focus { border-bottom-color: #1a1a1a; }
-.form-group input::placeholder { color: #ccc; font-weight: 300; }
+.form-group input::placeholder { color: #8f8e8e; font-weight: 300; }
 
 .btn-signup {
     width: 100%;
@@ -113,7 +113,7 @@ body {
     text-align: center;
     margin-top: 16px;
     font-size: 0.8rem;
-    color: #bbb;
+    color: #8f8e8e;
 }
 
 .login-link a {
