@@ -19,12 +19,16 @@
 
         <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="you@example.com">
+            <input type="email" id="formEmail" placeholder="you@example.com">
+            <!--Html email Error handling (nag inject nako ng css kasi nakakatamad ihiwalay "BAD PRACTICE")-->
+            <span id="emailError" style="color:red"></span>
         </div>
 
         <div class="form-group">
             <label>Password</label>
-            <input type="password" placeholder="••••••••">
+            <input type="password" id="formPassword" placeholder="••••••••">
+            <!--This one too 🤣-->
+            <span id="passwordError" style="color:red"></span>
         </div>
 
         <div class="forgot">
@@ -35,5 +39,6 @@
 
         <p class="register">No account? <a href="signUp.html">Register</a></p>
     </div>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
