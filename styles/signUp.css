@@ -59,18 +59,11 @@ body {
     font-weight: 500;
 }
 
-.existing-account a:hover {
-    text-decoration: underline;
-}
-
-/* RIGHT SIDE - FORM */
-.signup-right {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.98);
-    padding: 50px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.brand h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    font-weight: 400;
 }
 
 .signup-heading {
@@ -81,16 +74,21 @@ body {
     margin-bottom: 30px;
 }
 
-.form-group { 
-    margin-bottom: 20px;
+.signup-sub {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 25px;
+    font-weight: 300;
 }
+
+.form-group { margin-bottom: 16px; }
 
 .form-group label {
     display: block;
-    font-size: 0.75rem;
-    color: #666;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
+    font-size: 0.72rem;
+    color: #aaa;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 8px;
     font-weight: 400;
 }
@@ -99,7 +97,7 @@ body {
     width: 100%;
     padding: 10px 0;
     border: none;
-    border-bottom: 1.5px solid #ddd;
+    border-bottom: 1px solid #ddd;
     background: transparent;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
@@ -108,14 +106,8 @@ body {
     transition: border-color 0.2s;
 }
 
-.form-group input:focus { 
-    border-bottom-color: #2575d4;
-}
-
-.form-group input::placeholder { 
-    color: #ddd;
-    font-weight: 300;
-}
+.form-group input:focus { border-bottom-color: #1a1a1a; }
+.form-group input::placeholder { color: #ccc; font-weight: 300; }
 
 .btn-signup {
     width: 100%;
@@ -141,6 +133,22 @@ body {
 .btn-signup a {
     color: white;
     text-decoration: none;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.login-link a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #0ea5a4;
 }
 
 /* Mobile Responsive Design */

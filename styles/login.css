@@ -91,7 +91,7 @@
 
         .login-sub {
             font-size: 0.85rem;
-            color: #999;
+            color: #8f8e8e;
             margin-bottom: 40px;
             font-weight: 300;
         }
@@ -101,7 +101,7 @@
         .form-group label {
             display: block;
             font-size: 0.72rem;
-            color: #aaa;
+            color: #8f8e8e;
             letter-spacing: 1px;
             text-transform: uppercase;
             margin-bottom: 8px;
@@ -111,7 +111,7 @@
             width: 100%;
             padding: 12px 0;
             border: none;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #8f8e8e;
             background: transparent;
             font-family: 'DM Sans', sans-serif;
             font-size: 0.95rem;
@@ -121,7 +121,7 @@
         }
 
         .form-group input:focus { border-bottom-color: #1a1a1a; }
-        .form-group input::placeholder { color: #ccc; font-weight: 300; }
+        .form-group input::placeholder { color: #8f8e8e; font-weight: 300; }
 
         .forgot {
             text-align: right;
@@ -130,7 +130,7 @@
 
         .forgot a {
             font-size: 0.78rem;
-            color: #aaa;
+            color: #8f8e8e;
             text-decoration: none;
             transition: color 0.2s;
         }
@@ -157,7 +157,7 @@
             text-align: center;
             margin-top: 24px;
             font-size: 0.8rem;
-            color: #bbb;
+            color: #8f8e8e;
         }
 
         .register a {
