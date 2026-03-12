@@ -21,14 +21,15 @@ function coverPhoto(){
     //Cover Photo Post Button
     const postBtn = document.getElementById('submit');
     //css & div for cover photo variable
-    const imgHandler = document.getElementById('.cover-photo');
+    const imgHandler = document.querySelector('.cover-photo');
 
     //submit button function
     postBtn.addEventListener('click', function(event){
         //prevent the pages from refreshing
         event.preventDefault();
 
-        const file = imgId.file[0]; // this is the array that will hold or store the picture
+        //==this one will be stored in the db later==
+        const file = imgId.files[0]; // this is the array that will hold or store the picture
 
         if(file){
             const reader = new FileReader();
@@ -39,13 +40,44 @@ function coverPhoto(){
                 imgHandler.style.backgroundPosition = 'center';
 
                 //close the css ones the image is uploaded
-                document.getElementById('editProfileModal').classList.remove('hidden');
+                document.getElementById('editProfileModal').classList.add('hidden');
             };
             reader.readAsDataURL(file);
         }
-
     })
-
 }
-
+//cover photo function
 coverPhoto();
+
+//profile photo upload
+function profilePhoto(){
+    //image ID
+    const profilePfp = document.getElementById('profilePhotoInput');
+    //Profile pfp post btn
+    const Pfpsubmit = document.getElementById('submit');
+    //image manipulate
+    const profPfpImg = document.querySelector('#profile-photo');
+
+    //submit button function
+    Pfpsubmit.addEventListener('click', function(event){
+        event.preventDefault();
+
+        const pfpFile = profilePfp.files[0];
+
+        if(pfpFile){
+            const pfpReader = new FileReader();
+
+            pfpReader.onload = function(e){
+                profPfpImg.style.backgroundImage = `url(${e.target.result})`;
+                profPfpImg.style.backgroundSize = 'cover';
+                profPfpImg.style.backgroundPosition = 'center';
+
+                //close the css ones the image is uploaded
+                document.getElementById('editProfileModal').classList.add('hidden');
+            };
+            pfpReader.readAsDataURL(pfpFile);
+        }
+    })
+}
+//profile photo function
+profilePhoto();

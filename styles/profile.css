@@ -200,19 +200,18 @@ body {
   border-radius: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 0px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #profile-photo {
   position: absolute;
-  bottom: -70px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -60px;
+  left: 24px;
   width: 160px;
   height: 160px;
   border: 4px solid white;
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: #f0f0f0;
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -251,10 +250,10 @@ body {
 
 .profile-info {
   width: 100%;
-  text-align: center;
-  padding: 40px 16px 24px;
+  text-align: left;
+  padding: 5px 5px 9px 200px;
   background: white;
-  margin-top: 20px;
+  padding-top: -60px;
 }
 
 .profile-info h1 {
@@ -554,6 +553,50 @@ body {
 
 .remove-photo-btn:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* ==================== REUSABLE AVATAR & NAME LAYOUT ==================== */
+/* Use these classes to replicate the profile picture & name positioning
+   without the Edit Profile button or red minus button */
+
+.user-avatar {
+  position: absolute;
+  bottom: -60px;
+  left: 24px;
+  width: 160px;
+  height: 160px;
+  border: 4px solid white;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  background: white;
+}
+
+.user-info {
+  width: 100%;
+  text-align: center;
+  padding: 40px 16px 24px;
+  background: white;
+  margin-top: 20px;
+}
+
+.user-info h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1b;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #818384;
+  line-height: 1.5;
 }
 
 /* Mobile Responsive Design */
