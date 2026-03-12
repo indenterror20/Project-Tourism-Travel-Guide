@@ -7,7 +7,6 @@ const passwordError = document.getElementById('passwordError');
 
 //Empty Error Handling
 function validateEmail(){
-
     if (emailInput.value === ''){
     emailError.textContent = 'Please enter your email.'
     return false;
