@@ -81,3 +81,5 @@ function profilePhoto(){
 }
 //profile photo function
 profilePhoto();
+
+//function that allows the user see the selected file before posting it
