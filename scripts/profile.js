@@ -140,3 +140,12 @@ previewSelect('coverPhotoInput', 'coverPreview');
 previewSelect('profilePhotoInput', 'profilePreview');
 
 //function that allows the user to change username
+function editUsername(){
+    //will get the input_id from the form  
+    //will get the submit_id from the form
+
+    //eventListener
+    //when triggered the username will change to the userDesired username
+
+    //the will be stored to the database
+}
