@@ -83,3 +83,58 @@ function profilePhoto(){
 profilePhoto();
 
 //function that allows the user see the selected file before posting it
+function previewSelect(inputId, previewContainerId){
+    const input = document.getElementById(inputId);
+    const previewContainer = document.getElementById(previewContainerId);
+    input.addEventListener('change', function(){
+        const file = input.files[0];
+
+        //clear the previous preview
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+            //create a preview wrapper
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('preview-wrapper');
+            wrapper.style.cssText = `
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top 10px;
+            padding: 8px;
+            background-color: #f0f4ff;
+            `;
+
+            //creating a thumbnail image
+            const thumb = document.createElement('img');
+            thumb.src = e.target.result;
+            thumb.style.cssText = `
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 8px;
+            `;
+
+            //creating camera icon + filename label
+            const label = document.createElement('span');
+            label.style.cssText = `
+                    font-size: 14px;
+                    color: #3b5bdb;
+                    text-decoration: underline;
+                    cursor: pointer;
+                `;
+                label.innerHTML = `📷 ${file.name}`;
+
+                wrapper.appendChild(thumb);
+                wrapper.appendChild(label);
+                previewContainer.appendChild(wrapper);
+            };
+
+            reader.readAsDataURL(file);
+    })
+}
+//preview function for cover photo
+previewSelect('coverPhotoInput', 'coverPreview');
+
+//preview function for profile photo
+previewSelect('profilePhotoInput', 'profilePreview');
