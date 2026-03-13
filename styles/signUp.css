@@ -24,30 +24,48 @@ body {
 
 /* LEFT SIDE - BLUE */
 .signup-left {
-     background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("../images/signupleft.jpg") center/cover no-repeat;  
     padding: 60px 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    
+
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+    animation: slideshow 15s infinite;
+}
+
+/* animation photos */
+@keyframes slideshow {
+    0% { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/PH.jpg"); }
+    10%   { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/davao.jpg"); }
+    20%  { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/palawan.jpg"); }
+    40%  { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/jeep.jpg"); }
+    60% { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/signupleft.jpg"); }
+    80% { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/botbg.jpg"); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/BATANGAS.jpg"); }
 }
 
 .welcome-heading {
     font-family: 'sans-serif', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.8rem;
+    font-weight: bold 700px;
     margin-bottom: 20px;
     color: white;
-    line-height: 1.5;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .welcome-text {
-    font-size: 0.9rem;
-    line-height: 1.3;
-    margin-bottom: 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
     color: rgba(255, 255, 255, 0.95);
-    font-weight: 300px;
+    max-width: 90%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .existing-account {
@@ -55,6 +73,7 @@ body {
     font-weight: 300px;
     font-family: 'DM Sans', sans-serif;
     color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .existing-account a {
@@ -84,9 +103,9 @@ body {
 }
 
 .signup-heading {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 5rem;
+    font-weight: bold   60px;
     color: #1a1a1a;
     margin-bottom: 30px;
 }
@@ -98,7 +117,7 @@ body {
 .form-group label {
     display: block;
     font-size: 0.72rem;
-    color: #8f8e8e;
+    color: #637567;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -108,7 +127,7 @@ body {
     width: 100%;
     padding: 12px 0;
     border: none;
-    border-bottom: 1px solid #8f8e8e;
+    border-bottom: 1px solid #899b8d;
     background: transparent;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
@@ -122,7 +141,7 @@ body {
 }
 
 .form-group input::placeholder { 
-    color: #8f8e8e;
+    color: #637567;
     font-weight: 300;
 }
 
@@ -155,7 +174,7 @@ body {
     text-align: center;
     margin-top: 24px;
     font-size: 0.8rem;
-    color: #8f8e8e;
+    color:#637567;
 }
 
 .login-link a {
