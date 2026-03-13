@@ -138,3 +138,5 @@ previewSelect('coverPhotoInput', 'coverPreview');
 
 //preview function for profile photo
 previewSelect('profilePhotoInput', 'profilePreview');
+
+//function that allows the user to change username
