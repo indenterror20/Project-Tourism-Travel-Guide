@@ -141,10 +141,16 @@ previewSelect('profilePhotoInput', 'profilePreview');
 
 //function that allows the user to change username
 function editUsername(){
-    //will get the input_id from the form  
+    //will get the input_id from the form
+    const usernameInput = document.getElementById('usernameInput');  
     //will get the submit_id from the form
+    const usernameSubmit = document.getElementById('submit');
 
     //eventListener
+    usernameSubmit.addEventListener('click', function(event){
+        
+
+    })
     //when triggered the username will change to the userDesired username
 
     //the will be stored to the database
