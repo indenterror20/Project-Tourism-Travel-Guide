@@ -145,13 +145,29 @@ function editUsername(){
     const usernameInput = document.getElementById('usernameInput');  
     //will get the submit_id from the form
     const usernameSubmit = document.getElementById('submit');
+    //username handler
+    const displayUsername = document.getElementById('profileUsername')
 
-    //eventListener
+    //eventListener when triggered the username will change to the userDesired username
     usernameSubmit.addEventListener('click', function(event){
+        event.preventDefault();
+
+        const newUsername = usernameInput.value.trim();
+
+        //basic validation
+        if(!newUsername){
+            alert('username cannot be empty');
+            return;
+        }
+
+        //update the displayed username
+        usernameInput.value = '';
+        displayUsername.textContent = newUsername;
+
+        //the new username will be stored in the datbase
         
-
-    })
-    //when triggered the username will change to the userDesired username
-
-    //the will be stored to the database
+    });
 }
+
+//editUsername Function
+editUsername();
