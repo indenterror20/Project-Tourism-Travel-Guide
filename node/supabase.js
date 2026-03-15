@@ -6,6 +6,7 @@ const supabase = createClient(
     process.env.SUPABASE_ANON_KEY
 )
 
+//Database test (if database is connected)
 const {data, error} = await supabase.from('users').select('*').limit(1);
 
 if(error){
