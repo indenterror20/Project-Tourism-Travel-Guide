@@ -164,6 +164,9 @@ function editUsername(){
         usernameInput.value = '';
         displayUsername.textContent = newUsername;
 
+        //close the css ones the image is uploaded
+        document.getElementById('editProfileModal').classList.add('hidden');
+
         //the new username will be stored in the datbase
         
     });
