@@ -52,3 +52,6 @@ password.addEventListener('blur', validatePass);
 
 confirmPassword.addEventListener('click', confirmPass);
 confirmPassword.addEventListener('blur', confirmPass);
+
+
+//===============================USER SIGN-IN================================================
